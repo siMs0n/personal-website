@@ -14,7 +14,7 @@ const IndexPage = () => {
 
   return (
     <>
-      <main>
+      <main className={styles.main}>
         <SEO title="Simon Nielsen" />
         <section className={styles.topSection}>
           <section className={styles.presentationCard}>

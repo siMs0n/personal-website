@@ -1,0 +1,87 @@
+.navbar {
+  height: 4.5rem;
+  background: var(--primary-color);
+  color: var(--text-color-light);
+  border-radius: 0 0 3rem 3rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 3rem;
+  font-family: "Poppins";
+}
+
+.navbar a {
+  color: var(--text-color-light);
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+.indexLinkContainer {
+  flex: 1;
+}
+
+.indexLink {
+  font-size: 2.5rem;
+  line-height: 3rem;
+}
+
+.navbarLink {
+  font-size: 1.6rem;
+  margin: 0 1.5rem;
+  text-decoration: none;
+}
+
+.smallerFont {
+  font-size: 1rem;
+}
+
+.linkIcon {
+  display: none;
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 1023px) {
+  .navbar {
+    height: 3rem;
+  }
+
+  .indexLink {
+    font-size: 1.6rem;
+  }
+
+  .navbarLink {
+    font-size: 1rem;
+  }
+
+  .smallerFont {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    border-radius: 0;
+  }
+
+  .linkText {
+    display: none;
+  }
+
+  .linkIcon {
+    display: block;
+  }
+}
+
+@media (max-width: 520px) {
+  .navbar {
+    padding: 1.5rem;
+  }
+
+  .navbarLink {
+    margin: 0.75rem;
+  }
+}

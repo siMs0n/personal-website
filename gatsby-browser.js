@@ -6,6 +6,7 @@
 
 // You can delete this file if you're not using it
 import "typeface-open-sans";
+import "typeface-poppins";
 import "./src/styles/global.css";
 
 console.log(
