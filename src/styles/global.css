@@ -1,0 +1,41 @@
+:root {
+  --main-bg-color: #312f2f;
+  --primary-color: #ef626c;
+  --accent-color: #84dccf;
+  --text-color: #251e1f;
+  --text-color-light: #f1f1f1;
+
+  --card-box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.73);
+  --card-border-radius: 1.2rem;
+}
+
+html {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  background: var(--main-bg-color);
+  line-height: 1.5;
+}
+
+.card {
+  background: #f1f1f1;
+  border-radius: var(--card-border-radius) var(--card-border-radius) 0 0;
+  box-shadow: var(--card-box-shadow);
+}
+
+.card::after {
+  content: "";
+  height: 1.3rem;
+  width: 100%;
+  display: inline-block;
+  background: var(--primary-color);
+  border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
+  margin: 0 0 -1.3rem;
+}

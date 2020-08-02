@@ -1,0 +1,148 @@
+body {
+  font-family: "Open Sans";
+}
+
+main {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.topSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.presentationCard {
+  background: var(--primary-color);
+  color: var(--text-color-light);
+  border-radius: var(--card-border-radius);
+  padding: 2rem;
+  box-shadow: var(--card-box-shadow);
+  margin-right: 5rem;
+  width: 40%;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.presentationCard h1 {
+  font-size: 2.6rem;
+}
+
+.moreButton {
+  background: #f6e8ea;
+  color: var(--text-color);
+  border-radius: 10rem;
+  display: inline-block;
+  height: 3rem;
+  padding: 0.5rem 2rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  line-height: 2rem;
+  font-weight: 700;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.73);
+}
+
+.profilePictureContainer {
+  width: 40%;
+  max-width: 500px;
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--card-border-radius);
+}
+
+@media (max-width: 1023px) {
+  .topSection {
+    flex-direction: column-reverse;
+  }
+
+  .presentationCard {
+    width: 100%;
+    margin: 0;
+    padding: 3rem 2rem 2rem;
+  }
+
+  .profilePictureContainer {
+    width: 50%;
+    margin-bottom: -1.5rem;
+  }
+}
+
+@media (max-width: 520px) {
+  main {
+    padding: 4rem 1rem;
+  }
+
+  .topSection {
+    flex-direction: column-reverse;
+  }
+
+  .presentationCard {
+    width: 100%;
+    margin: 0;
+    padding: 3rem 2rem 2rem;
+    font-size: 1rem;
+  }
+
+  .profilePictureContainer {
+    width: 70%;
+    margin-bottom: -1.5rem;
+  }
+}
+
+.siteNavSection {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.siteNavCard {
+  width: 410px;
+  height: 450px;
+  text-align: center;
+  margin: 4rem 1rem 0;
+  position: relative;
+  padding-top: 148px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.siteNavCard h2 {
+  width: 100%;
+  max-width: 345px;
+  background-color: var(--main-bg-color);
+  color: var(--text-color-light);
+  font-size: 2.5rem;
+  line-height: 3rem;
+  display: inline-block;
+  padding: 0.5rem 0;
+  position: relative;
+}
+
+.siteNavCard p {
+  margin: 0 1rem;
+}
+
+.siteNavCardImgContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 1rem);
+  margin: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .siteNavCard {
+    margin: 4rem 0 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .siteNavCard {
+    padding-top: 35%;
+  }
+}
