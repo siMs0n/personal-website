@@ -1,0 +1,25 @@
+main {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 3rem 6rem 0;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 3rem 2rem 0;
+  }
+}
+
+.page-title {
+  font-size: 5rem;
+  font-weight: 700;
+  font-family: "Poppins";
+  color: var(--accent-color);
+  text-align: center;
+}
+
+@media (max-width: 520px) {
+  .page-title {
+    font-size: 3rem;
+  }
+}

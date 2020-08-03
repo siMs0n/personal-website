@@ -1,0 +1,118 @@
+.topSection {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 4rem;
+
+  /*display: grid;
+  grid-template-columns: minmax(30rem, 60rem) 450px;
+  grid-auto-flow: column;
+  grid-auto-rows: auto;*/
+  /*grid-template-columns: minmax(30rem, auto) 450px;*/
+  /*grid-auto-columns: minmax(30rem, 60rem) 450px;*/
+  /*grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 60rem));
+  grid-gap: 2rem;*/
+}
+
+.presentationCard {
+  min-width: 582px;
+  max-width: 900px;
+  margin-right: 4rem;
+}
+
+.presentationCardContent {
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+
+.firstSentence {
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.pictureAndLinksContainer {
+  flex: 1;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profilePictureContainer {
+  min-width: 300px;
+  width: 100%;
+  box-shadow: var(--card-box-shadow);
+  border-radius: var(--card-border-radius);
+  margin-bottom: 2rem;
+}
+
+.iconButtonLink {
+  margin: 0 1rem;
+}
+
+.iconButton {
+  box-shadow: var(--card-box-shadow);
+}
+
+.portraitInText {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .presentationCard {
+    width: 100%;
+    margin-right: 0;
+    min-width: 100%;
+  }
+
+  .presentationCardContent {
+    padding: 2rem;
+    font-size: 1rem;
+  }
+
+  .pictureAndLinksContainer {
+    float: right;
+    margin: 0 0 0.5rem 0.5rem;
+    width: 180px;
+  }
+
+  .profilePictureContainer {
+    min-width: 180px;
+    margin-bottom: 1rem;
+  }
+
+  .portraitOutside {
+    display: none;
+  }
+
+  .portraitInText {
+    display: flex;
+  }
+
+  .iconButton {
+    width: 48px;
+    height: 48px;
+    border-radius: 0.3rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .topSection {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .pictureAndLinksContainer {
+    margin-bottom: 4rem;
+  }
+
+  .portraitOutside {
+    display: flex;
+  }
+
+  .portraitInText {
+    display: none;
+  }
+}

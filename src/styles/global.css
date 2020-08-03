@@ -27,16 +27,8 @@ body {
 .card {
   background: #f1f1f1;
   border-radius: var(--card-border-radius);
+  border-bottom: 1.3rem solid var(--primary-color);
   box-shadow: var(--card-box-shadow);
-}
-
-.card::after {
-  content: "";
-  height: 1.3rem;
-  width: 100%;
-  display: inline-block;
-  background: var(--primary-color);
-  border-radius: 0 0 var(--card-border-radius) var(--card-border-radius);
 }
 
 footer {
