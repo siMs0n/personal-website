@@ -99,7 +99,7 @@ const IndexPage = () => {
 const SiteNavCard = ({ title, img, text, linkText, linkTo }) => (
   <article className={`card ${styles.siteNavCard}`}>
     <div className={styles.siteNavCardImgContainer}>{img}</div>
-    <h2>{title}</h2>
+    <h2 style={{ textTransform: "none" }}>{title}</h2>
     <p>{text}</p>
     <LinkButton linkText={linkText} linkTo={linkTo} />
   </article>

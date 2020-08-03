@@ -45,6 +45,87 @@ const AboutMePage = () => {
         </article>
         <ProfileImgAndLinks data={data} />
       </section>
+      <section className={styles.skillsSection}>
+        <h2>Skills</h2>
+        <article className={`card ${styles.skillsCard}`}>
+          <div className={styles.skillsSpanTwo}>
+            <h3 className={styles.skillsHeading}>Development</h3>
+            <p>
+              HTML
+              <br />
+              CSS
+              <br />
+              Javascript
+              <br />
+              React
+              <br />
+              Scala
+              <br />
+              React Native
+              <br />
+              MongoDb
+              <br />
+            </p>
+          </div>
+          <div className={styles.skillsSpanTwo}>
+            <h3
+              className={styles.skillsHeading}
+              style={{ visibility: "hidden" }}
+            >
+              continued
+            </h3>
+            <p>
+              Node.js
+              <br />
+              Express.js
+              <br />
+              Gatsby.js
+              <br />
+              REST
+              <br />
+              Android
+              <br />
+              MySQL
+              <br />
+              Docker
+              <br />
+            </p>
+          </div>
+          <div className={styles.skillsSpanTwo}>
+            <h3 className={styles.skillsHeading}>Design</h3>
+            <p>
+              UX design
+              <br />
+              Interviews
+              <br />
+              Ideation
+              <br />
+              Prototyping
+              <br />
+              UX and usability evaluation
+              <br />
+            </p>
+          </div>
+          <div>
+            <h3 className={styles.skillsHeading}>Tools</h3>
+            <p>
+              Figma
+              <br />
+              Blender
+              <br />
+              Git
+            </p>
+          </div>
+          <div>
+            <h3 className={styles.skillsHeading}>Methods</h3>
+            <p>
+              Scrum
+              <br />
+              Kanban
+            </p>
+          </div>
+        </article>
+      </section>
     </Layout>
   );
 };
