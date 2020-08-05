@@ -38,9 +38,14 @@ const Navbar = () => (
 );
 
 const navbarLinkClassName = link => {
-  return `${styles.navbarLink} ${
-    window.location.pathname === link && styles.currentPage
-  }`;
+  // To ensure Gatsby build passes https://www.gatsbyjs.org/docs/debugging-html-builds/
+  if (typeof window !== `undefined`) {
+    return `${styles.navbarLink} ${
+      window.location.pathname === link && styles.currentPage
+    }`;
+  } else {
+    return styles.navbarLink;
+  }
 };
 
 export default Navbar;

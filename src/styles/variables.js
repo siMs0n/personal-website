@@ -1,9 +1,14 @@
 // From https://gist.github.com/luciopaiva/01bda0d4311ccaecea0478ad2fd03108
 function readCssVar(varName) {
   varName = varName.startsWith("--") ? varName : "--" + varName;
-  return window
-    .getComputedStyle(document.documentElement)
-    .getPropertyValue(varName);
+  // To ensure Gatsby build passes https://www.gatsbyjs.org/docs/debugging-html-builds/
+  if (typeof window !== `undefined`) {
+    return window
+      .getComputedStyle(document.documentElement)
+      .getPropertyValue(varName);
+  } else {
+    return "";
+  }
 }
 
 const variables = {

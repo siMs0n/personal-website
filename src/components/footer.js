@@ -2,8 +2,12 @@
 import React from "react";
 
 const Footer = () => {
-  const urlParams = new URLSearchParams(window.location.search);
-  const formSubmitted = urlParams && urlParams.has("form-submitted");
+  let formSubmitted = false;
+  // To ensure Gatsby build passes https://www.gatsbyjs.org/docs/debugging-html-builds/
+  if (typeof window !== `undefined`) {
+    const urlParams = new URLSearchParams(window.location.search);
+    formSubmitted = urlParams && urlParams.has("form-submitted");
+  }
 
   return (
     <footer>
@@ -41,7 +45,10 @@ const Footer = () => {
           <input
             type="hidden"
             name="_next"
-            value={window.location.href + "?form-submitted=true"}
+            value={
+              typeof window !== `undefined` &&
+              window.location.href + "?form-submitted=true"
+            }
           ></input>
           <input type="text" name="_honey" style={{ display: "none" }}></input>
         </form>
