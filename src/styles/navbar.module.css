@@ -8,6 +8,7 @@
   align-items: center;
   padding: 0 3rem;
   font-family: "Poppins";
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.73);
 }
 
 .navbar a {
@@ -44,6 +45,13 @@
   height: 32px;
 }
 
+.currentPage {
+  border-radius: 0.8rem;
+  box-sizing: content-box;
+  border-bottom: 5px solid var(--accent-color);
+  padding: 5px 0.5rem 0;
+}
+
 @media (max-width: 1023px) {
   .navbar {
     height: 3rem;
@@ -73,6 +81,10 @@
 
   .linkIcon {
     display: block;
+  }
+
+  .currentPage {
+    padding: 0;
   }
 }
 

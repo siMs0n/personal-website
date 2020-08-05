@@ -3,8 +3,8 @@ import React from "react";
 import { Link } from "gatsby";
 import styles from "../styles/linkButton.module.css";
 
-const LinkButton = ({ linkTo, linkText }) => (
-  <Link className={styles.linkButton} to={linkTo}>
+const LinkButton = ({ linkTo, linkText, backgroundColor }) => (
+  <Link className={styles.linkButton} to={linkTo} style={{ backgroundColor }}>
     {linkText}
   </Link>
 );
@@ -12,6 +12,7 @@ const LinkButton = ({ linkTo, linkText }) => (
 LinkButton.propTypes = {
   linkTo: PropTypes.string.isRequired,
   linkText: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.string,
 };
 
 export default LinkButton;

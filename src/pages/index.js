@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import { Link } from "gatsby";
 import Img from "gatsby-image";
 import { useStaticQuery, graphql } from "gatsby";
 import SEO from "../components/seo";
@@ -8,6 +7,7 @@ import LinkButton from "../components/linkButton";
 import Footer from "../components/footer";
 
 import styles from "../styles/index.module.css";
+import variables from "../styles/variables";
 
 const IndexPage = () => {
   const data = useStaticQuery(indexPageStaticQuery);
@@ -23,9 +23,11 @@ const IndexPage = () => {
               I’m a software engineer with a passion for web development. Right
               now I’m most interested in frontend, both designing and coding.
             </p>
-            <Link className={styles.moreButton} to="/about-me">
-              More about me
-            </Link>
+            <LinkButton
+              linkText="More about me"
+              linkTo="/about-me"
+              backgroundColor={variables.secondaryColor()}
+            />
           </section>
           <div className={styles.profilePictureContainer}>
             <Img

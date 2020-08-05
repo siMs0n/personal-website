@@ -11,4 +11,11 @@
   font-weight: 700;
   font-size: 1.3rem;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.73);
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.linkButton:focus,
+.linkButton:hover {
+  filter: brightness(115%);
+  transform: translate(-5px, -5px);
 }

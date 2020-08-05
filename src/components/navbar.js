@@ -14,23 +14,33 @@ const Navbar = () => (
         SN
       </Link>
     </span>
-    <Link className={styles.navbarLink} to="/about-me">
+    <Link className={navbarLinkClassName("/about-me")} to="/about-me">
       <PersonIcon className={styles.linkIcon} />
       <span className={styles.linkText}>About</span>
     </Link>
-    <Link className={styles.navbarLink} to="/portfolio">
+
+    <Link className={navbarLinkClassName("/portfolio")} to="/portfolio">
       <PortfolioIcon className={styles.linkIcon} />
       <span className={styles.linkText}>Portfolio</span>
     </Link>
-    <Link className={`${styles.navbarLink} ${styles.smallerFont}`} to="/how">
+    <Link
+      className={`${navbarLinkClassName("/how")} ${styles.smallerFont}`}
+      to="/how"
+    >
       <CodeIcon className={styles.linkIcon} />
       <span className={styles.linkText}>How I {"<built/>"} This</span>
     </Link>
-    <Link className={styles.navbarLink} to="/resources">
+    <Link className={navbarLinkClassName("/resources")} to="/resources">
       <BookIcon className={styles.linkIcon} />
       <span className={styles.linkText}>Resources</span>
     </Link>
   </nav>
 );
+
+const navbarLinkClassName = link => {
+  return `${styles.navbarLink} ${
+    window.location.pathname === link && styles.currentPage
+  }`;
+};
 
 export default Navbar;

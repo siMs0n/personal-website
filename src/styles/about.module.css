@@ -53,6 +53,13 @@
 
 .iconButton {
   box-shadow: var(--card-box-shadow);
+  transition: filter 0.3s, transform 0.3s;
+}
+
+.iconButton:focus,
+.iconButton:hover {
+  filter: brightness(115%);
+  transform: translate(-5px, -5px);
 }
 
 .portraitInText {

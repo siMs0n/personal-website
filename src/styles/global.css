@@ -2,6 +2,7 @@
   --main-bg-color: #312f2f;
   --primary-color: #ef626c;
   --accent-color: #84dccf;
+  --secondary-color: #f6e8ea;
   --text-color: #251e1f;
   --text-color-light: #f1f1f1;
 
@@ -33,6 +34,7 @@ body {
 
 footer {
   margin: 8rem auto 0;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
