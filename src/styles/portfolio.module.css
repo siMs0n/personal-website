@@ -1,0 +1,105 @@
+.cardsSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  grid-gap: 4rem;
+  margin: 4rem auto 0;
+  max-width: 1800px;
+}
+
+.portfolioPreviewCard {
+  padding: 2rem;
+  display: flex;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.portfolioPreviewCard h2 {
+  color: var(--primary-color);
+  font-size: 1.6rem;
+  text-transform: none;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}
+
+.portfolioYear {
+  font-weight: 600;
+}
+
+.descriptionText {
+  flex: 1;
+}
+
+.portfolioCardInfo {
+  min-width: 275px;
+  flex: 1;
+  margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.previewImgContainer {
+  min-width: 50px;
+  max-height: 455px;
+  flex: 1;
+}
+
+.previewImgContainer * {
+  height: 100%;
+}
+
+.imgInText {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .cardsSection {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolioPreviewCard {
+    min-height: 375px;
+  }
+
+  .portfolioCardInfo {
+    min-width: 250px;
+  }
+}
+
+@media (max-width: 520px) {
+  .portfolioPreviewCard {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+  }
+
+  .portfolioCardInfo {
+    align-items: center;
+    margin: 0;
+  }
+
+  .portfolioCardInfo h2 {
+    text-align: center;
+  }
+
+  .previewImgContainer {
+    height: 250px;
+    width: 100%;
+    margin: 0.65rem 0 1.45rem;
+  }
+
+  .previewImgContainer img {
+    object-fit: cover !important;
+    object-position: center top !important;
+  }
+
+  .imgInText {
+    display: block;
+  }
+
+  .imgAtSide {
+    display: none;
+  }
+}
