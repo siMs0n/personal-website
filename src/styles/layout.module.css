@@ -18,6 +18,20 @@ main {
   text-align: center;
 }
 
+.smallerPageTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  font-family: "Poppins";
+  color: var(--text-color-light);
+  text-align: left;
+}
+
+@media (max-width: 1024px) {
+  .smallerPageTitle {
+    text-align: center;
+  }
+}
+
 @media (max-width: 520px) {
   main {
     padding: 3rem 1rem 0;

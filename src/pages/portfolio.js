@@ -8,7 +8,7 @@ import LinkButton from "../components/linkButton";
 import layoutStyles from "../styles/layout.module.css";
 import styles from "../styles/portfolio.module.css";
 
-const AboutMePage = () => {
+const PortfolioPage = () => {
   const data = useStaticQuery(portfolioPageStaticQuery);
   return (
     <Layout>
@@ -40,7 +40,7 @@ const AboutMePage = () => {
               imgStyle={{ borderRadius: "0.8rem", objectFit: "contain" }}
             />
           }
-          linkTo="/portfolio/internship"
+          linkTo="/portfolio/summer-internship"
           linkText="Explore the internship"
         />
         <PortfolioPreviewCard
@@ -93,10 +93,6 @@ const PortfolioPreviewCard = ({
         <div className={`${styles.imgInText} ${styles.previewImgContainer}`}>
           {img}
         </div>
-        <div
-          className={styles.imgInText}
-          style={{ filter: "blur(5px)", height: "100px", marginTop: "-100px" }}
-        />
         <LinkButton linkText={linkText} linkTo={linkTo} />
       </div>
       <div className={`${styles.imgAtSide} ${styles.previewImgContainer}`}>
@@ -154,4 +150,4 @@ const portfolioPageStaticQuery = graphql`
   }
 `;
 
-export default AboutMePage;
+export default PortfolioPage;
