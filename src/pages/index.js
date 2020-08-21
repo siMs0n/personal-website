@@ -5,9 +5,11 @@ import { useStaticQuery, graphql } from "gatsby";
 import SEO from "../components/seo";
 import LinkButton from "../components/linkButton";
 import Footer from "../components/footer";
+import WavingHandIcon from "../icons/waving-hand-icon.svg";
 
 import styles from "../styles/index.module.css";
 import variables from "../styles/variables";
+import "animate.css";
 
 const IndexPage = () => {
   const data = useStaticQuery(indexPageStaticQuery);
@@ -17,7 +19,9 @@ const IndexPage = () => {
       <main className={styles.main}>
         <SEO title="Hi there" />
         <section className={styles.topSection}>
-          <section className={styles.presentationCard}>
+          <section
+            className={`${styles.presentationCard} animate__animated animate__fadeInLeft`}
+          >
             <h1>Hi there, I'm Simon</h1>
             <p>
               I’m a software engineer with a passion for web development. Right
@@ -29,13 +33,16 @@ const IndexPage = () => {
               backgroundColor={variables.secondaryColor()}
             />
           </section>
-          <div className={styles.profilePictureContainer}>
+          <div
+            className={`${styles.profilePictureContainer} animate__animated animate__fadeInRight`}
+          >
             <Img
               fluid={data.profilePicture.childImageSharp.fluid}
               alt="Portrait of me, Simon Nielsen"
               imgStyle={{ borderRadius: "1.2rem" }}
             />
           </div>
+          <WavingHandIcon className={styles.wavingHandIcon} />
         </section>
         <section className={styles.siteNavSection}>
           <SiteNavCard
@@ -50,6 +57,7 @@ const IndexPage = () => {
             text="I’ve built some stuff both as a professional coder and UX design student."
             linkText="To portfolio"
             linkTo="/portfolio"
+            animationDelay="1s"
           />
           <SiteNavCard
             title={
@@ -77,6 +85,7 @@ const IndexPage = () => {
             text="I learned a lot building this website, both designwise and codewise. Gatsby rocks!"
             linkText="How it was made"
             linkTo="/how"
+            animationDelay="1.5s"
           />
           <SiteNavCard
             title="Resources"
@@ -90,6 +99,7 @@ const IndexPage = () => {
             text="Looking for new design tools, inspiration or a new podcast to listen to? Check this out."
             linkText="Check it out"
             linkTo="/resources"
+            animationDelay="2s"
           />
         </section>
       </main>
@@ -98,8 +108,18 @@ const IndexPage = () => {
   );
 };
 
-const SiteNavCard = ({ title, img, text, linkText, linkTo }) => (
-  <article className={`card ${styles.siteNavCard}`}>
+const SiteNavCard = ({
+  title,
+  img,
+  text,
+  linkText,
+  linkTo,
+  animationDelay,
+}) => (
+  <article
+    className={`card ${styles.siteNavCard} animate__animated animate__slideInUp`}
+    style={{ "--animate-duration": animationDelay }}
+  >
     <div className={styles.siteNavCardImgContainer}>{img}</div>
     <h2 style={{ textTransform: "none" }}>{title}</h2>
     <p>{text}</p>

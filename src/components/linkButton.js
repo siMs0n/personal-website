@@ -33,7 +33,11 @@ LinkButton.propTypes = {
   linkTo: PropTypes.string.isRequired,
   linkText: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string,
-  external: PropTypes.boolean,
+  external: PropTypes.bool,
+};
+
+LinkButton.defaultProps = {
+  external: false,
 };
 
 export default LinkButton;
