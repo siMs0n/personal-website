@@ -16,8 +16,10 @@
   transition: filter 0.3s, transform 0.3s;
 }
 
-.linkButton:focus,
-.linkButton:hover {
-  filter: brightness(115%);
-  transform: translate(-5px, -5px);
+@media (min-width: 876px) {
+  .linkButton:focus,
+  .linkButton:hover {
+    filter: brightness(115%);
+    transform: translate(-5px, -5px);
+  }
 }

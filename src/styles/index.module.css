@@ -153,7 +153,7 @@ body {
 .wavingHandIcon {
   position: absolute;
   top: 150px;
-  left: 400px;
+  left: 0;
   width: 100px;
   height: 100px;
   z-index: 0;
@@ -161,25 +161,29 @@ body {
   animation: wave 2s linear 2s;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 1550px) {
   .wavingHandIcon {
+    width: 64px;
+    height: 64px;
+    animation: waveSmall 2s linear 2s;
   }
 }
 
 @media (max-width: 520px) {
   .wavingHandIcon {
-    left: 200px;
+    width: 48px;
+    height: 48px;
   }
 }
 
 @keyframes wave {
   from {
-    left: 400px;
+    left: calc((100vw / 2) - 30rem);
     opacity: 100;
   }
 
   15% {
-    left: 250px;
+    left: calc((100vw / 2) - 40rem);
   }
 
   30%,
@@ -193,23 +197,23 @@ body {
     transform: rotate(20deg);
   }
   85% {
-    left: 250px;
+    left: calc((100vw / 2) - 40rem);
     transform: rotate(20deg);
   }
 
   to {
-    left: 400px;
+    left: calc((100vw / 2) - 30rem);
   }
 }
 
-@keyframes waveUp {
+@keyframes waveSmall {
   from {
-    top: 400px;
+    left: 200px;
     opacity: 100;
   }
 
   15% {
-    top: 250px;
+    left: 1.2%;
   }
 
   30%,
@@ -223,11 +227,11 @@ body {
     transform: rotate(20deg);
   }
   85% {
-    top: 250px;
+    left: 1.2%;
     transform: rotate(20deg);
   }
 
   to {
-    top: 400px;
+    left: 200px;
   }
 }

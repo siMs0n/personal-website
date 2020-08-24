@@ -4,16 +4,6 @@
   align-items: flex-start;
   margin: 4rem auto 0;
   max-width: 1600px;
-
-  /*display: grid;
-  grid-template-columns: minmax(30rem, 60rem) 450px;
-  grid-auto-flow: column;
-  grid-auto-rows: auto;*/
-  /*grid-template-columns: minmax(30rem, auto) 450px;*/
-  /*grid-auto-columns: minmax(30rem, 60rem) 450px;*/
-  /*grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(30rem, 60rem));
-  grid-gap: 2rem;*/
 }
 
 .presentationCard {
