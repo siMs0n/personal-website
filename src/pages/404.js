@@ -5,10 +5,10 @@ import layoutStyles from "../styles/layout.module.css";
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Sidan saknas" />
-    <h1 className={layoutStyles.pageTitle}>Oops, den här sidan saknas</h1>
+    <SEO title="404: Page not found" />
+    <h1 className={layoutStyles.pageTitle}>Oops, this page is missing</h1>
     <p className={layoutStyles.notFoundText}>
-      Jag vet inte vad som hände där ¯\_(ツ)_/¯
+      I'm not sure what happened there ¯\_(ツ)_/¯
     </p>
   </Layout>
 );
