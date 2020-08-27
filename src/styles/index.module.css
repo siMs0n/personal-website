@@ -203,6 +203,7 @@ body {
 
   to {
     left: calc((100vw / 2) - 30rem);
+    opacity: 100;
   }
 }
 
@@ -233,5 +234,6 @@ body {
 
   to {
     left: 200px;
+    opacity: 100;
   }
 }
