@@ -6,17 +6,18 @@ import Footer from "./footer";
 import "./layout.css";
 import "../styles/layout.module.css";
 
-const Layout = ({ children }) => {
+const Layout = ({ mainClassName, children }) => {
   return (
     <>
       <Navbar />
-      <main>{children}</main>
+      <main className={mainClassName}>{children}</main>
       <Footer />
     </>
   );
 };
 
 Layout.propTypes = {
+  mainClassName: PropTypes.string,
   children: PropTypes.node.isRequired,
 };
 
