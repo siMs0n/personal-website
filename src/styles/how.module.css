@@ -14,11 +14,11 @@
   width: 100%;
   height: 15rem;
   border-bottom: 1.5rem var(--accent-color) solid;
-  padding-bottom: 1rem;
+  padding-top: 6rem;
   padding-right: 1rem;
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items: center;
   font-size: 2rem;
   font-weight: 700;
   text-align: right;
@@ -29,6 +29,8 @@
 
 .highlightsSection > *:nth-child(1) {
   animation-delay: 0.3s;
+  height: 10rem;
+  padding-top: 0;
 }
 
 .highlightsSection > *:nth-child(2) {
@@ -37,8 +39,6 @@
 
 .highlightsSection > *:nth-child(3) {
   animation-delay: 0.7s;
-  align-items: flex-end;
-  line-height: 3;
 }
 
 .highlightsSection > *:nth-child(4) {
@@ -50,7 +50,7 @@
 }
 
 .productIcon {
-  max-height: 150px;
+  max-height: 128px;
   max-width: 250px;
   margin-left: 2rem;
 }
@@ -64,6 +64,10 @@
   margin-left: 8rem;
   font-size: 1.3rem;
   height: fit-content;
+}
+
+.firstSentence {
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
@@ -92,6 +96,8 @@
     justify-content: center;
     width: 80%;
     height: 8rem;
+    padding-top: 0;
+    padding-bottom: 1rem;
     margin: 0 auto 8rem;
   }
 
@@ -127,11 +133,7 @@
 @keyframes fadeInLeft {
   from {
     opacity: 0;
-    transform: translateX(-1500px);
-  }
-
-  50% {
-    opacity: 100;
+    transform: translateX(-110%);
   }
 
   to {

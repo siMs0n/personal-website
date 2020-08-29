@@ -45,10 +45,13 @@ const HowIBuiltThisPage = () => {
       </section>
       <section className={`card ${styles.descriptionCard}`}>
         <p>
-          Designing a personal website is certainly a challenge. This is finally
-          the project where you can make it whatever you want and you really
-          want to show everything you got! But time and complexity forces you to
-          reduce your ambitions, so hooray for a middle-ground?
+          <span className={styles.firstSentence}>
+            Designing a personal website is certainly a challenge.
+          </span>{" "}
+          This is finally the project where you can make it whatever you want
+          and you really want to show everything you got! But time and
+          complexity forces you to reduce your ambitions, so hooray for a
+          middle-ground?
         </p>
         <p>
           With the design I’ve tried to make it simple but still has some punch
