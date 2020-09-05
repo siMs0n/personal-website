@@ -1,0 +1,102 @@
+.overviewSection {
+  display: grid;
+  grid-template-columns: 2fr 2fr 17rem;
+  grid-gap: 2rem;
+  margin-top: 4rem;
+}
+
+.overviewSection h2 {
+  grid-column: span 3;
+}
+
+.overviewSection div {
+  height: min-content;
+}
+
+.portfolioTextCard {
+  padding: 2rem;
+}
+
+.mtLogoInTextContainer {
+  display: none;
+}
+
+.portfolioSection {
+  margin: 10rem 0;
+}
+
+.portfolioSection h2 {
+  margin-bottom: 4rem;
+}
+
+.learningsCard {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem 10%;
+  padding: 2rem;
+}
+
+@media (max-width: 1440px) {
+  .overviewSection {
+    grid-template-columns: 1fr;
+  }
+
+  .overviewSection h2 {
+    grid-column: 1;
+  }
+
+  .overviewSection div {
+    height: unset;
+  }
+
+  .overviewSection > div:last-child {
+    display: none;
+  }
+
+  .companyCardContent {
+    display: flex;
+  }
+
+  .companyCardContent > p {
+    flex: 2;
+  }
+
+  .mtLogoInTextContainer {
+    display: block;
+    flex: 1;
+    margin-left: 4rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .portfolioTextCard,
+  .learningsCard {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+
+  .prototypeImageWrapper {
+    grid-column: 1;
+  }
+
+  .prototypeImageWrapper > * {
+    width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .portfolioTextCard,
+  .learningsCard {
+    padding: 1rem;
+  }
+
+  .companyCardContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mtLogoInTextContainer {
+    width: 60%;
+    margin: 0;
+  }
+}
