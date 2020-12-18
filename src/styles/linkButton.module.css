@@ -21,5 +21,6 @@
   .linkButton:hover {
     filter: brightness(115%);
     transform: translate(-5px, -5px);
+    color: #000;
   }
 }

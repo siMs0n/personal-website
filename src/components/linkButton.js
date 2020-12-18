@@ -3,8 +3,14 @@ import React from "react";
 import { Link } from "gatsby";
 import styles from "../styles/linkButton.module.css";
 
-const LinkButton = ({ linkTo, linkText, backgroundColor, external }) => {
-  if (external) {
+const LinkButton = ({
+  linkTo,
+  linkText,
+  backgroundColor,
+  external,
+  download,
+}) => {
+  if (external || download) {
     return (
       <a
         href={linkTo}
@@ -12,6 +18,7 @@ const LinkButton = ({ linkTo, linkText, backgroundColor, external }) => {
         style={{ backgroundColor }}
         target="blank"
         rel="noopener noreferrer"
+        download={download}
       >
         {linkText}
       </a>
@@ -34,6 +41,7 @@ LinkButton.propTypes = {
   linkText: PropTypes.string.isRequired,
   backgroundColor: PropTypes.string,
   external: PropTypes.bool,
+  download: PropTypes.bool,
 };
 
 LinkButton.defaultProps = {

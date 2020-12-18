@@ -28,7 +28,9 @@ const Navbar = () => (
       to="/how"
     >
       <CodeIcon className={styles.linkIcon} />
-      <span className={styles.linkText}>{animateText("How I <built/> This")}</span>
+      <span className={styles.linkText}>
+        {animateText("How I <built/> This")}
+      </span>
     </Link>
     <Link className={navbarLinkClassName("/resources")} to="/resources">
       <BookIcon className={styles.linkIcon} />
@@ -51,8 +53,15 @@ const navbarLinkClassName = link => {
 const animateText = text => {
   const delayPerLetter = 0.3 / text.length;
   return text.split("").map((letter, index) => {
-    return (<span style={{animationDelay: index * delayPerLetter + "s"}}>{letter}</span>)
-  })
-}
+    return (
+      <span
+        key={index}
+        style={{ animationDelay: index * delayPerLetter + "s" }}
+      >
+        {letter}
+      </span>
+    );
+  });
+};
 
 export default Navbar;

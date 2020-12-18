@@ -7,6 +7,7 @@ import SEO from "../components/seo";
 import LinkButton from "../components/linkButton";
 import layoutStyles from "../styles/layout.module.css";
 import styles from "../styles/portfolio.module.css";
+import DeviesLogo from "../icons/devies.svg";
 
 const PortfolioPage = () => {
   const data = useStaticQuery(portfolioPageStaticQuery);
@@ -16,21 +17,15 @@ const PortfolioPage = () => {
       <h1 className={layoutStyles.pageTitle}>Portfolio</h1>
       <section className={styles.cardsSection}>
         <PortfolioPreviewCard
-          title="Master thesis"
-          year="2020"
-          description="How to design for engagement and motivation in a smartphone app that helps people with their sleep problems?"
-          img={
-            <Img
-              fluid={data.masterThesisPreview.childImageSharp.fluid}
-              alt="Interface of app"
-              imgStyle={{ borderRadius: "0.8rem", objectFit: "contain" }}
-            />
-          }
-          linkTo="/portfolio/master-thesis"
-          linkText="Check out my thesis"
+          title="Frontend Engineer @Devies"
+          year="2020-"
+          description="Working with several projects such as webshop in React for Bräutigams and a Vue application for influencers."
+          img={<DeviesLogo width="90%" maxWidth="358px" />}
+          linkTo="/portfolio/devies"
+          linkText="More about my work"
         />
         <PortfolioPreviewCard
-          title="Summer internship"
+          title="Summer internship @Idean"
           year="2019"
           description="Designing a prototype webapp for making the lives of people with diabetes easier for the Norweigian e-Health Directorate."
           img={
@@ -44,8 +39,8 @@ const PortfolioPage = () => {
           linkText="Explore the internship"
         />
         <PortfolioPreviewCard
-          title="School projects"
-          year="2016, 2019"
+          title="Master Thesis & School projects"
+          year="2016, 2019-2020"
           description="Showcasing three projects from my master’s programme as well as my bachelor thesis."
           img={
             <Img
