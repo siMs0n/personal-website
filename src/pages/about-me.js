@@ -28,12 +28,11 @@ const AboutMePage = () => {
               the server, to web apps and designing the interfaces.
             </p>
             <p>
-              I like technical challenges and to come up with exciting ideas for
-              projects but I feel like I’m also a good complement to the
-              visionaries when you need to come up with practical solutions that
-              will work in reality. For a project to succeed I think the team is
-              the most important thing and I really enjoy learning as much as I
-              can from my team members.{" "}
+              When building something I think the best way to is to do it with a
+              great team. With open discussions, honest retrospectives and a
+              good team spirit the work is so much easier, and more fun! I love
+              to discuss solutions and coding with my teammates, maybe a bit too
+              much at times.
             </p>
             <p>
               In my spare time I sing and act in Chalmerspexet (you should come
@@ -51,19 +50,19 @@ const AboutMePage = () => {
           <div className={styles.skillsSpanTwo}>
             <h3 className={styles.skillsHeading}>Development</h3>
             <p>
-              HTML
+              React
+              <br />
+              Redux
+              <br />
+              Vue
+              <br />
+              TypeScript
+              <br />
+              JavaScript
               <br />
               CSS
               <br />
-              Javascript
-              <br />
-              React
-              <br />
               Scala
-              <br />
-              React Native
-              <br />
-              MongoDb
               <br />
             </p>
           </div>
@@ -83,9 +82,9 @@ const AboutMePage = () => {
               <br />
               REST
               <br />
-              Android
+              GraphQL
               <br />
-              MySQL
+              MongoDB
               <br />
               Docker
               <br />
