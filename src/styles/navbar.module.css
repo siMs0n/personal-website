@@ -16,8 +16,9 @@
   font-weight: 500;
 }
 
-.navbar a:hover {
-  text-decoration: underline;
+.navbar a:hover span span {
+  position: relative;
+  animation: jump 0.4s forwards;
 }
 
 .indexLinkContainer {
@@ -27,6 +28,14 @@
 .indexLink {
   font-size: 2.5rem;
   line-height: 3rem;
+  display: block;
+  width: fit-content;
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+
+.indexLink:hover {
+  transform: rotate(-15deg);
 }
 
 .navbarLink {
@@ -96,4 +105,10 @@
   .navbarLink {
     margin: 0.75rem;
   }
+}
+
+@keyframes jump {
+  0% { bottom: -0.2em; opacity: 1; }
+  50% { bottom: 0.2em; }
+  100% { bottom: 0; opacity: 1; text-decoration: underline; }
 }

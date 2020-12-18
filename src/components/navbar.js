@@ -16,23 +16,23 @@ const Navbar = () => (
     </span>
     <Link className={navbarLinkClassName("/about-me")} to="/about-me">
       <PersonIcon className={styles.linkIcon} />
-      <span className={styles.linkText}>About</span>
+      <span className={styles.linkText}>{animateText("About")}</span>
     </Link>
 
     <Link className={navbarLinkClassName("/portfolio")} to="/portfolio">
       <PortfolioIcon className={styles.linkIcon} />
-      <span className={styles.linkText}>Portfolio</span>
+      <span className={styles.linkText}>{animateText("Portfolio")}</span>
     </Link>
     <Link
       className={`${navbarLinkClassName("/how")} ${styles.smallerFont}`}
       to="/how"
     >
       <CodeIcon className={styles.linkIcon} />
-      <span className={styles.linkText}>How I {"<built/>"} This</span>
+      <span className={styles.linkText}>{animateText("How I <built/> This")}</span>
     </Link>
     <Link className={navbarLinkClassName("/resources")} to="/resources">
       <BookIcon className={styles.linkIcon} />
-      <span className={styles.linkText}>Resources</span>
+      <span className={styles.linkText}>{animateText("Resources")}</span>
     </Link>
   </nav>
 );
@@ -47,5 +47,12 @@ const navbarLinkClassName = link => {
     return styles.navbarLink;
   }
 };
+
+const animateText = text => {
+  const delayPerLetter = 0.3 / text.length;
+  return text.split("").map((letter, index) => {
+    return (<span style={{animationDelay: index * delayPerLetter + "s"}}>{letter}</span>)
+  })
+}
 
 export default Navbar;
