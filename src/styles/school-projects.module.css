@@ -27,6 +27,7 @@ section h2 {
 
 .prototypeImageWrapper > div {
   max-height: 500px;
+  max-width: 400px;
 }
 
 .prototypeImageWrapper > div > div {
@@ -45,6 +46,7 @@ section h2 {
 @media (max-width: 1200px) {
   .prototypeImageWrapper {
     grid-template-columns: 1fr;
+    align-items: center;
   }
 
   .prototypeImageWrapper > div {
@@ -79,6 +81,10 @@ section h2 {
 
   .prototypeImageWrapper {
     padding: 0;
+  }
+
+  .prototypeImageWrapper > div {
+    max-width: none;
   }
 
   .prototypeImageWrapper > img {

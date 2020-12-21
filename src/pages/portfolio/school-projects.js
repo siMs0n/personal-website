@@ -178,6 +178,104 @@ const SchoolProjectsPage = () => {
           </div>
         </div>
       </section>
+      <section>
+        <h2>Alone with the thoughts(2019)</h2>
+        <div className={`card ${styles.portfolioTextCard}`}>
+          <div className={styles.portfolioTextPart}>
+            <h3>The task</h3>
+            <p>
+              This was an individual project done as part of the course
+              Designing User Experiences. Our task was to create a critical
+              design that was designed around an emotion. I chose to design
+              around anxiety with the goal of helping people to understand those
+              dealing with anxiety to reduce the related stigma.
+            </p>
+            <h3>The process</h3>
+            <p>
+              It was an iterative process with many steps during a few weeks. A
+              lot surrounded around an interview subject that has had for many
+              years and still suffers from severe depression. This person helped
+              me get more understanding for the experience of living with
+              depression and was also part of evaluating the design towards the
+              end.
+            </p>
+            <h3>The result</h3>
+            <p>
+              I developed a VR prototype game in A-frame that could be
+              experienced with Google Cardboard and headphones. The player tries
+              to act and think in a way where you avoid anxiety attacks by
+              looking at an alternative at each “question” to pick it. They are
+              placed in a few typical anxiety induced scenarios and their
+              anxiety is represented by the “anxiety ghost” that whispers their
+              negative thoughts. Throughout the game you learn some techniques
+              to reduce negative though spirals and how to ease an anxiety
+              attack.
+            </p>
+            <h3>Learnings</h3>
+            <p>
+              - Designing a design process and follow it through.
+              <br />
+              - Design for an emotion in an immersive medium.
+              <br />
+              - Interview experts about a sensitive subject.
+              <br />
+              - Think critically about what kind of experience I want the users
+              to have and what they should learn from it.
+              <br />- Quickly develop a high-fidelity prototype.
+            </p>
+          </div>
+          <div className={styles.prototypeImageWrapper}>
+            <div>
+              <Img
+                fluid={data.designProcess.childImageSharp.fluid}
+                alt="Chart of design process"
+                imgStyle={{ objectFit: "contain" }}
+              />
+              <p>Design process</p>
+            </div>
+            <div>
+              <Img
+                fluid={data.circumplex.childImageSharp.fluid}
+                alt="Graph with red cross near nervous and tense"
+                imgStyle={{ objectFit: "contain" }}
+              />
+              <p>Design goal of UX in the Circumplex Model of Affect</p>
+            </div>
+            <div>
+              <Img
+                fluid={data.tillman.childImageSharp.fluid}
+                alt="Ghost says mean things about woman"
+                imgStyle={{ objectFit: "contain" }}
+              />
+              <p>The anxiety ghost by Marie Tillman</p>
+            </div>
+            <div>
+              <Img
+                fluid={data.anxietyGhost.childImageSharp.fluid}
+                alt="3D ghost in game"
+                imgStyle={{ objectFit: "contain" }}
+              />
+              <p>The anxiety ghost in my game</p>
+            </div>
+            <div>
+              <Img
+                fluid={data.mechanics.childImageSharp.fluid}
+                alt="In game deciding on actions"
+                imgStyle={{ objectFit: "contain" }}
+              />
+              <p>Choose what to think, in order to not get an anxiety attack</p>
+            </div>
+            <div>
+              <Img
+                fluid={data.therapist.childImageSharp.fluid}
+                alt="3D therapist behind desk"
+                imgStyle={{ objectFit: "contain" }}
+              />
+              <p>Learn basic coping skills from an in-game therapist</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
@@ -252,7 +350,7 @@ const SchoolProjectsPageStaticQuery = graphql`
       }
     ) {
       childImageSharp {
-        fluid(maxHeight: 500) {
+        fluid(maxHeight: 512) {
           ...GatsbyImageSharpFluid
         }
       }
@@ -263,7 +361,73 @@ const SchoolProjectsPageStaticQuery = graphql`
       }
     ) {
       childImageSharp {
-        fluid(maxHeight: 500) {
+        fluid(maxHeight: 512) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    designProcess: file(
+      relativePath: {
+        eq: "portfolio/school-projects/alone-with-the-thoughts/design-process.png"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 512) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    circumplex: file(
+      relativePath: {
+        eq: "portfolio/school-projects/alone-with-the-thoughts/circumplex.png"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 512) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    tillman: file(
+      relativePath: {
+        eq: "portfolio/school-projects/alone-with-the-thoughts/tillman.png"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 512) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    anxietyGhost: file(
+      relativePath: {
+        eq: "portfolio/school-projects/alone-with-the-thoughts/anxiety-ghost.png"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 512) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    mechanics: file(
+      relativePath: {
+        eq: "portfolio/school-projects/alone-with-the-thoughts/mechanics.png"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 512) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    therapist: file(
+      relativePath: {
+        eq: "portfolio/school-projects/alone-with-the-thoughts/therapist.png"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 512) {
           ...GatsbyImageSharpFluid
         }
       }
