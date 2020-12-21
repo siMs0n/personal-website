@@ -14,7 +14,7 @@ const SchoolProjectsPage = () => {
       <h1 className={layoutStyles.smallerPageTitle}>
         Master thesis and school projects
       </h1>
-      <section className={styles.overviewSection}>
+      <section>
         <h2>Master thesis (2020)</h2>
         <div className={`card ${styles.portfolioTextCard}`}>
           <div className={styles.portfolioTextPart}>
@@ -95,6 +95,89 @@ const SchoolProjectsPage = () => {
           </div>
         </div>
       </section>
+      <section>
+        <h2>The war inside your body (2019)</h2>
+        <div className={`card ${styles.portfolioTextCard}`}>
+          <div className={styles.portfolioTextPart}>
+            <h3>The task</h3>
+            <p>
+              Teenagers interest in natural sciences is decreasing in Swedish
+              schools. To boost their interest the science center Universeum
+              partnered with Chalmers University to organize an exhibition. For
+              a few weeks I was a part of a group of four other students that
+              developed a prototype that we tested in Universeum for our course
+              Interaction Design project.
+            </p>
+            <h3>The process</h3>
+            <p>
+              Through different ideation methods and idea selection methods we
+              came up with the concept that was then iterated upon after more
+              research into how the complement system works. Utilizing the
+              KJ-method and storyboards we outlined the experience and worked
+              with how to simplify the problem enough to be understandable and
+              interesting for teenagers. We developed paper prototypes and
+              worked with the tabletop technologies and Unity to finally bring
+              everything together.
+            </p>
+            <h3>The result</h3>
+            <p>
+              We created “The War Inside Your Body”. An interactive tabletop
+              experience where users combine different proteins in order to
+              defend the body from invading bacteria. The goal of the project
+              was to illustrate how the complement system works and how
+              seemingly basic components like molecules or proteins can interact
+              with one another in order to create rich and complex systems. The
+              gameplay consisted of interacting with digital components with
+              physical markers to drive a narrative with 3D animations of parts
+              of the complement system.
+            </p>
+            <h3>Learnings</h3>
+            <p>
+              - Collaborating with a team of designers in a larger project
+              <br />
+              - Working with tangible interfaces and 3D game engines
+              <br />- Experience in designing for children and teenagers
+            </p>
+          </div>
+          <div className={styles.prototypeImageWrapper}>
+            <div>
+              <Img
+                fluid={data.kjMethod.childImageSharp.fluid}
+                alt="Post-its grouped on whiteboard"
+                imgStyle={{ objectFit: "contain" }}
+              />
+              <p>KJ method in progress</p>
+            </div>
+            <div>
+              <Img
+                fluid={data.tableSetup.childImageSharp.fluid}
+                alt="Laptop showing captured tracking data"
+                imgStyle={{ objectFit: "contain" }}
+              />
+              <p>Prototyping setup with projector, table and tracking</p>
+            </div>
+            <div>
+              <Img
+                fluid={data.projectorUniverseum.childImageSharp.fluid}
+                alt="Projector screen with game on it"
+                imgStyle={{ objectFit: "contain" }}
+              />
+              <p>
+                The environment on the projector reacts to the user’s
+                interactions on the table.
+              </p>
+            </div>
+            <div>
+              <Img
+                fluid={data.tableUniverseum.childImageSharp.fluid}
+                alt="Two girls using game trackers on table"
+                imgStyle={{ objectFit: "contain" }}
+              />
+              <p>Multiple trackers invites for collaboration.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
@@ -137,6 +220,50 @@ const SchoolProjectsPageStaticQuery = graphql`
     ) {
       childImageSharp {
         fluid(maxHeight: 450) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    kjMethod: file(
+      relativePath: {
+        eq: "portfolio/school-projects/war-inside-your-body/kj-method.png"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 375) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    tableSetup: file(
+      relativePath: {
+        eq: "portfolio/school-projects/war-inside-your-body/table-setup.png"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 375) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    projectorUniverseum: file(
+      relativePath: {
+        eq: "portfolio/school-projects/war-inside-your-body/projector-universeum.png"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxHeight: 500) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    tableUniverseum: file(
+      relativePath: {
+        eq: "portfolio/school-projects/war-inside-your-body/table-universeum.png"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxHeight: 500) {
           ...GatsbyImageSharpFluid
         }
       }
