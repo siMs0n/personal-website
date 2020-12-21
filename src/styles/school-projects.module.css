@@ -28,6 +28,8 @@ section h2 {
 .prototypeImageWrapper > div {
   max-height: 500px;
   max-width: 400px;
+  width: 400px;
+  margin: 0 auto;
 }
 
 .prototypeImageWrapper > div > div {
@@ -66,6 +68,13 @@ section h2 {
 
 .bachelorThesisCard img {
   max-height: 450px;
+}
+
+@media (max-width: 1600px) {
+  .prototypeImageWrapper > div {
+    width: unset;
+    margin: 0;
+  }
 }
 
 @media (max-width: 1200px) {
