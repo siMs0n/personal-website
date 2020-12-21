@@ -17,7 +17,7 @@ const FullStackDeveloperPage = () => {
   );
   return (
     <Layout>
-      <SEO title="Portfolio" />
+      <SEO title="Portfolio - Full Stack" />
       <h1 className={layoutStyles.smallerPageTitle}>Full stack developer</h1>
       <section className={styles.overviewSection}>
         <h2>Overview</h2>

@@ -11,7 +11,7 @@ import ConsultantCV from "../../downloads/DeviesCV_Simon_Nielsen_2020-11-18_23_1
 const DeviesPage = () => {
   return (
     <Layout>
-      <SEO title="Portfolio" />
+      <SEO title="Portfolio - Devies" />
       <h1 className={layoutStyles.smallerPageTitle}>
         Frontend Engineer @Devies
       </h1>

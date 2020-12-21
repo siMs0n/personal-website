@@ -11,7 +11,7 @@ const SummerInternshipPage = () => {
   const data = useStaticQuery(summerInternshipPageStaticQuery);
   return (
     <Layout>
-      <SEO title="Portfolio" />
+      <SEO title="Portfolio - Internship" />
       <h1 className={layoutStyles.smallerPageTitle}>Summer internship</h1>
       <section className={styles.overviewSection}>
         <h2>Project overview</h2>

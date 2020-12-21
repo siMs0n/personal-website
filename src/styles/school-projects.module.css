@@ -1,0 +1,87 @@
+section {
+  margin-top: 4rem;
+}
+
+section h2 {
+  margin-bottom: 3.45rem;
+}
+
+.portfolioTextCard {
+  padding: 2rem;
+  display: flex;
+}
+
+.portfolioTextPart {
+  width: 30%;
+  min-width: 300px;
+}
+
+.prototypeImageWrapper {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3rem;
+  padding: 2rem 1rem 3rem 2rem;
+  text-align: center;
+}
+
+.prototypeImageWrapper > div {
+  max-height: 500px;
+}
+
+.prototypeImageWrapper > div > div {
+  max-height: 450px;
+}
+
+.prototypeImageWrapper img {
+  max-height: 450px;
+  image-rendering: pixelated;
+}
+
+.prototypeImageWrapper p {
+  margin-top: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .prototypeImageWrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .prototypeImageWrapper > div {
+    max-height: 450px;
+  }
+
+  .prototypeImageWrapper > div > div {
+    max-height: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .portfolioTextPart {
+    width: 40%;
+    min-width: 250px;
+  }
+  .prototypeImageWrapper {
+    padding: 0 0 0 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolioTextCard {
+    padding: 1rem;
+    display: block;
+  }
+
+  .portfolioTextPart {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .prototypeImageWrapper {
+    padding: 0;
+  }
+
+  .prototypeImageWrapper > img {
+    margin: 0 auto;
+  }
+}
