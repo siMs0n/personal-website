@@ -48,7 +48,12 @@ const AboutMePage = () => {
         <h2>Skills</h2>
         <article className={`card ${styles.skillsCard}`}>
           <div className={styles.skillsSpanTwo}>
-            <h3 className={styles.skillsHeading}>Development</h3>
+            <h3
+              className={styles.skillsHeading}
+              style={{ width: "fit-content" }}
+            >
+              Development
+            </h3>
             <p>
               React
               <br />
@@ -67,13 +72,7 @@ const AboutMePage = () => {
             </p>
           </div>
           <div className={styles.skillsSpanTwo}>
-            <h3
-              className={styles.skillsHeading}
-              style={{ visibility: "hidden" }}
-            >
-              continued
-            </h3>
-            <p>
+            <p style={{ marginTop: "2.1rem" }}>
               Node.js
               <br />
               Express.js
