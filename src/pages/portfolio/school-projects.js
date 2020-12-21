@@ -276,6 +276,42 @@ const SchoolProjectsPage = () => {
           </div>
         </div>
       </section>
+      <section>
+        <h2>Artist transport system for way out west (2016-2017)</h2>
+        <div className={`card ${styles.bachelorThesisCard}`}>
+          <div>
+            <h3>Bachelor thesis and beyond</h3>
+            <p>
+              As a bachelor thesis I was part of a group of students who
+              developed an artist transport system for music festivals. We did
+              this in collaboration with a company that handles the logistics of
+              transporting artists during some major music festivals in Sweden.
+              Transporting artists means planning and providing rides from the
+              airport to their hotel, to the venue and other places during their
+              stay in the city of the festival.
+            </p>
+            <p>
+              We developed a web application with an automatic scheduling
+              algorithm as well as an app for the drivers. I was mainly working
+              on the web app. After the thesis was completed we kept working on
+              the web app to have it ready for Way out West the following year.
+            </p>
+            <p>
+              So far it has been used succesfully for three consecutive years,
+              providing a much needed system for organising over 700 rides, 50
+              artists, 40 drivers and 30 vehicles each year.
+            </p>
+          </div>
+          <div className={styles.bachelorImageWrapper}>
+            <Img
+              fluid={data.eciton.childImageSharp.fluid}
+              alt="Two screens running the system at Way out West"
+              imgStyle={{ objectFit: "contain" }}
+            />
+            <p>The system in action</p>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 };
@@ -428,6 +464,17 @@ const SchoolProjectsPageStaticQuery = graphql`
     ) {
       childImageSharp {
         fluid(maxWidth: 512) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    eciton: file(
+      relativePath: {
+        eq: "portfolio/school-projects/bachelor-thesis/eciton.png"
+      }
+    ) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid
         }
       }

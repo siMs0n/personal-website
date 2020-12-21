@@ -36,11 +36,36 @@ section h2 {
 
 .prototypeImageWrapper img {
   max-height: 450px;
-  image-rendering: pixelated;
 }
 
 .prototypeImageWrapper p {
   margin-top: 1rem;
+}
+
+.bachelorThesisCard {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bachelorThesisCard > div {
+  width: 45%;
+}
+
+.bachelorImageWrapper {
+  text-align: center;
+}
+
+.bachelorImageWrapper > div {
+  max-height: 500px;
+}
+
+.bachelorImageWrapper p {
+  margin-top: 1rem;
+}
+
+.bachelorThesisCard img {
+  max-height: 450px;
 }
 
 @media (max-width: 1200px) {
@@ -65,6 +90,12 @@ section h2 {
   }
   .prototypeImageWrapper {
     padding: 0 0 0 1rem;
+  }
+  .bachelorThesisCard {
+    flex-direction: column;
+  }
+  .bachelorThesisCard > div {
+    width: 100%;
   }
 }
 
