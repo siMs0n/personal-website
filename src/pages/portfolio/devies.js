@@ -50,7 +50,7 @@ const DeviesPage = () => {
           </p>
         </div>
         <div className={`card ${styles.logoCard}`}>
-          <DeviesLogo width="100%" maxWidth="358px" />
+          <DeviesLogo width="100%" maxwidth="358px" />
         </div>
         <div className={`card ${styles.cvCard}`}>
           <PaperIcon />

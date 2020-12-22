@@ -20,7 +20,7 @@ const PortfolioPage = () => {
           title="Frontend Engineer @Devies"
           year="2020-"
           description="Working with several projects such as webshop in React for Bräutigams and a Vue application for influencers."
-          img={<DeviesLogo width="90%" maxWidth="358px" />}
+          img={<DeviesLogo width="90%" maxwidth="358px" />}
           linkTo="/portfolio/devies"
           linkText="More about my work"
         />
