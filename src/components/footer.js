@@ -7,6 +7,13 @@ const Footer = () => {
   if (typeof window !== `undefined`) {
     const urlParams = new URLSearchParams(window.location.search);
     formSubmitted = urlParams && urlParams.has("form-submitted");
+    window.history.replaceState({}, "", window.location.href.split("?")[0]);
+  }
+
+  if (formSubmitted) {
+    setTimeout(() => {
+      window.scrollTo(0, document.body.scrollHeight);
+    }, 100);
   }
 
   return (
