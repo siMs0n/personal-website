@@ -1,8 +1,12 @@
-section {
-  margin-top: 4rem;
+.schoolProjectSection {
+  margin: 10rem 0;
 }
 
-section h2 {
+.schoolProjectSection:first-of-type {
+  margin: 4rem 0 0;
+}
+
+.schoolProjectSection h2 {
   margin-bottom: 3.45rem;
 }
 

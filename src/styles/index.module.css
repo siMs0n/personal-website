@@ -150,9 +150,15 @@ body {
   }
 }
 
+@media (max-width: 420px) {
+  .siteNavCard h2 {
+    max-width: unset;
+  }
+}
+
 .wavingHandIcon {
   position: absolute;
-  top: 300px;
+  top: 150px;
   left: 0;
   width: 100px;
   height: 100px;
@@ -171,16 +177,12 @@ body {
 
 @media (max-width: 1023px) {
   .wavingHandIcon {
-    top: 200px;
-    width: 64px;
-    height: 64px;
     animation: waveMid 2s linear 2s;
   }
 }
 
 @media (max-width: 520px) {
   .wavingHandIcon {
-    top: 200px;
     width: 48px;
     height: 48px;
     animation: waveSmall 2s linear 2s;

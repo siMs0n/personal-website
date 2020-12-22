@@ -19,6 +19,7 @@ const HowIBuiltThisPage = () => {
             fontWeight: "500",
             color: "#FBC539",
             fontSize: "0.7em",
+            verticalAlign: "middle",
           }}
         >
           {"<built/>"}

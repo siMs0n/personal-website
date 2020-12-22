@@ -14,7 +14,7 @@ const SchoolProjectsPage = () => {
       <h1 className={layoutStyles.smallerPageTitle}>
         Master thesis and school projects
       </h1>
-      <section>
+      <section className={styles.schoolProjectSection}>
         <h2>Master thesis (2020)</h2>
         <div className={`card ${styles.portfolioTextCard}`}>
           <div className={styles.portfolioTextPart}>
@@ -95,7 +95,7 @@ const SchoolProjectsPage = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className={styles.schoolProjectSection}>
         <h2>The war inside your body (2019)</h2>
         <div className={`card ${styles.portfolioTextCard}`}>
           <div className={styles.portfolioTextPart}>
@@ -178,7 +178,7 @@ const SchoolProjectsPage = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className={styles.schoolProjectSection}>
         <h2>Alone with the thoughts(2019)</h2>
         <div className={`card ${styles.portfolioTextCard}`}>
           <div className={styles.portfolioTextPart}>
@@ -276,7 +276,7 @@ const SchoolProjectsPage = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className={styles.schoolProjectSection}>
         <h2>Artist transport system for way out west (2016-2017)</h2>
         <div className={`card ${styles.bachelorThesisCard}`}>
           <div>
