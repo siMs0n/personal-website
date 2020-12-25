@@ -22,13 +22,13 @@ const AboutMePage = () => {
               <span className={styles.firstSentence}>
                 My name is Simon Nielsen.
               </span>{" "}
-              I recently graduated from Chalmers as a software engineer with a
-              master’s in Interaction Design. I love learning new things and
-              currently I’m passionate about web development - all the way from
-              the server, to web apps and designing the interfaces.
+              I'm a software engineer with a master’s in Interaction Design. I
+              love learning new things and currently I’m passionate about web
+              development - all the way from the server, to web apps and
+              designing the interfaces.
             </p>
             <p>
-              When building something I think the best way to is to do it with a
+              When building something I think the best way is to do it with a
               great team. With open discussions, honest retrospectives and a
               good team spirit the work is so much easier, and more fun! I love
               to discuss solutions and coding with my teammates, maybe a bit too
