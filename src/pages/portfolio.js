@@ -27,7 +27,7 @@ const PortfolioPage = () => {
         <PortfolioPreviewCard
           title="Summer internship @Idean"
           year="2019"
-          description="Designing a prototype webapp for making the lives of people with diabetes easier for the Norweigian e-Health Directorate."
+          description="Designing a prototype webapp for making the lives of people with diabetes easier for the Norwegian e-Health Directorate."
           img={
             <Img
               fluid={data.internshipPreview.childImageSharp.fluid}

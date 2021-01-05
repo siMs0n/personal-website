@@ -35,10 +35,10 @@ const AboutMePage = () => {
               much at times.
             </p>
             <p>
-              In my spare time I sing and act in Chalmerspexet (you should come
-              and see our shows!) and spend time with my friends and girlfriend.
-              I love having a lot of stuff going on like making music, playing
-              around with 3D software, programming projects and planning trips.
+              In my spare time I sing and act in Chalmerspexet and spend time
+              with my friends and girlfriend. I love having a lot of stuff going
+              on like making music, playing around with 3D software, programming
+              projects and planning trips.
             </p>
           </div>
         </article>

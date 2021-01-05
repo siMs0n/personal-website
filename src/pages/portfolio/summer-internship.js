@@ -21,12 +21,12 @@ const SummerInternshipPage = () => {
             The internship was as a UX designer at Idean, part of Capgemini
             Invent, in Oslo. It lasted for 8 weeks between June and August of
             2019. I was paired up with another UX design intern and three
-            developer interns to do a project with the Norweigian e-Health
+            developer interns to do a project with the Norwegian e-Health
             Directorate.
           </p>
           <h3>The problem</h3>
           <p>
-            The e-Health Directorate wanted to explore the possibilites of
+            The e-Health Directorate wanted to explore the possibilities of
             utilizing consumer wearable devices in healthcare. Together with
             them we decided to focus on people with type 1 diabetes since they
             seemed like a group that could see a lot of benefit from this
@@ -36,7 +36,7 @@ const SummerInternshipPage = () => {
           <p>
             A web application called “Helseinnsikt” (Health insight) where you
             can sync your wearable devices and get access to your health data
-            such as bloodsugar levels, physical activity and steps. You can
+            such as blood sugar levels, physical activity and steps. You can
             compare data sources to understand more about how things like
             activity and food influences your blood sugar. The e-Health
             Directorate was very happy with the prototype and decided right away
@@ -49,7 +49,7 @@ const SummerInternshipPage = () => {
             I was one of the two UX-designers on the project but because of my
             technical background I was also part of some technical decisions.
             Together with the other designer we lead a design sprint together
-            with the developers, planned and made nine intervjiews and designed
+            with the developers, planned and made nine interviews and designed
             the UI. At the end of the project I also programmed some of the
             functionality.
           </p>
@@ -83,7 +83,7 @@ const SummerInternshipPage = () => {
             <h3>Desk research and problem definition</h3>
             <p>
               We started by doing some research about diabetes, technical
-              possibilites in consumer wearables devices and how wearables are
+              possibilities in consumer wearables devices and how wearables are
               used today in healthcare. Then together with the e-Health
               Directorate we had a lot of discussions and a workshop around what
               the problem was and what kind of solutions they were looking for.
@@ -92,9 +92,9 @@ const SummerInternshipPage = () => {
               exploratory project.
               <br />
               Together we decided to focus on people with diabetes type 1 since
-              they have a chronic disease that requires checking on your
-              bloodsugar levels and that they can benefit a lot by getting
-              activated in healthy activities.
+              they have a chronic disease that requires checking on your blood
+              sugar levels and that they can benefit a lot by getting activated
+              in healthy activities.
             </p>
           </div>
           <Img
@@ -107,12 +107,12 @@ const SummerInternshipPage = () => {
             <p>
               This resulted in a model of the problem space were we needed to
               find out what to fit in the empty spots. <br />
-              How do we sync data to the Norweigian health platform? <br />
+              How do we sync data to the Norwegian health platform? <br />
               What kind of app can we create there that brings value to the
               users?
               <br />
               And how can we enable them to share their data with healthcare
-              personell in a safe way if the choose to do so?
+              personnel in a safe way if the choose to do so?
             </p>
           </div>
           <Img
@@ -160,7 +160,7 @@ const SummerInternshipPage = () => {
               a lot from them about how it is to live with diabetes and what
               challenges they face as well as how they interact with healthcare.
               For example, people with diabetes often have a hard time
-              understanding why their bloodsugar levels are especially low or
+              understanding why their blood sugar levels are especially low or
               high at a specific time which can be frustrating. Even though we
               learned a bunch the interviews had their price: it took a lot of
               time to find people and set up the interviews.
@@ -220,7 +220,7 @@ const SummerInternshipPage = () => {
             <p>
               The result was a web application called “Helseinnsikt” (Health
               insight) where you can sync your wearable devices and get access
-              to your health data such as bloodsugar levels, physical activity
+              to your health data such as blood sugar levels, physical activity
               and steps. You can compare data sources to understand more about
               how things like activity and food influences your blood sugar.
               <br />

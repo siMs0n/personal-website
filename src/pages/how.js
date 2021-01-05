@@ -56,8 +56,8 @@ const HowIBuiltThisPage = () => {
         </p>
         <p>
           With the design I’ve tried to make it simple but still has some punch
-          to it. I’ve made it AA accesible according to the WCAG standards and I
-          hope I made it interesting in terms of content and copy.
+          to it. I’ve made it AA accessible according to the WCAG standards and
+          I hope I made it interesting in terms of content and copy.
         </p>
         <p>
           One of the goals making this site was to learn Gatsby.js and I feel

@@ -82,7 +82,7 @@ const IndexPage = () => {
                 imgStyle={{ borderRadius: "1.2rem" }}
               />
             }
-            text="I learned a lot building this website, both designwise and codewise. Gatsby rocks!"
+            text="I learned a lot building this website, both design-wise and code-wise. Gatsby rocks!"
             linkText="How it was made"
             linkTo="/how"
             animationDelay="1.5s"

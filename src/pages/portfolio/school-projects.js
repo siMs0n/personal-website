@@ -25,7 +25,7 @@ const SchoolProjectsPage = () => {
               the recommended treatment for insomnia and could potentially be
               delivered digitally. It can be argued that motivation and
               engagement is very important for a digital behavior change
-              ntervention to be successful and some concepts and guidelines has
+              intervention to be successful and some concepts and guidelines has
               previously been proposed to design for this. My thesis aimed to
               answer what should be considered when designing for motivation and
               engagement in a smartphone app for behavioral change intervention
@@ -90,7 +90,7 @@ const SchoolProjectsPage = () => {
                 alt="A graph of ISI score"
                 imgStyle={{ objectFit: "contain" }}
               />
-              <p>Measureable progress</p>
+              <p>Measurable progress</p>
             </div>
           </div>
         </div>
@@ -297,8 +297,8 @@ const SchoolProjectsPage = () => {
               the web app to have it ready for Way out West the following year.
             </p>
             <p>
-              So far it has been used succesfully for three consecutive years,
-              providing a much needed system for organising over 700 rides, 50
+              So far it has been used successfully for three consecutive years,
+              providing a much needed system for organizing over 700 rides, 50
               artists, 40 drivers and 30 vehicles each year.
             </p>
           </div>
